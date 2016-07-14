@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:p="http://primefaces.org/ui"
+      xmlns:ui="http://java.sun.com/jsf/facelets">
+
+      <h:form>
+          <p:menubar>
+             <p:submenu label="Administrador">
+               <p:menuitem value="Empresa" outcome="/pages/empresa.xhtml" />
+               <p:menuitem value="Perfil"  outcome="/pages/perfil.xhtml" />
+               <p:menuitem value="Usuario"  outcome="/pages/usuario.xhtml" />
+               <p:menuitem value="Tipo Configuracao"  outcome="/pages/tipoconfig.xhtml" />
+               <p:menuitem value="Instalação Configuracao"  outcome="/pages/instalacaoconfig.xhtml" />
+               <p:menuitem value="Link Default"  outcome="/pages/linkdefault.xhtml" />
+               <p:menuitem value="Sair" />
+               
+             </p:submenu>
+             <p:submenu label="Configuracao">
+               <p:menuitem value="Credendial" outcome="/pages/credencialusuario.xhtml"/>
+               <p:menuitem value="Link" outcome="/pages/linkcadastro.xhtml"/>
+             </p:submenu>
+
+             <p:submenu label="Cadastro">
+               <p:menuitem value="CMDB" outcome="/pages/cmdb.xhtml"/>
+               <p:menuitem value="Senha Database/App" outcome="/pages/cadastrodbapp.xhtml"/>
+               <p:menuitem value="Senha Servidor" outcome="/pages/cadastrodbappservidor.xhtml"/>
+               <p:menuitem value="Base Conhecimento" outcome="/pages/baseconhecimento.xhtml"/>
+               <p:menuitem value="Ferias" outcome="/pages/feria.xhtml"/>
+             </p:submenu>
+
+
+             <p:submenu label="Pesquisa">
+                 <p:menuitem value="Senha" />
+             </p:submenu>
+          </p:menubar>
+      </h:form>
+</ui:composition>
